@@ -29,3 +29,22 @@ minus.addEventListener("click", () => {
     value.textContent = count;
   }
 });
+
+const numberoftravelers = count;
+
+const flyingFrom = document.querySelector('textarea[name="flying-from"]');
+const flyingTo = document.querySelector('textarea[name="Flying-to"]');
+const budget = document.querySelector('textarea[name="Budget"]');
+
+const fromDate = document.querySelector('input[name="from-date"]');
+const toDate = document.querySelector('input[name="To Date"]');
+
+const planButton = document.querySelector(".btn-2");
+
+planButton.addEventListener("click", () => {
+  const fromValue = flyingFrom.value;
+  const toValue = flyingTo.value;
+  const budgetValue = budget.value;
+  const fromDateValue = fromDate.value;
+  const toDateValue = toDate.value;
+});
