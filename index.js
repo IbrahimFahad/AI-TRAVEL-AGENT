@@ -56,10 +56,28 @@ planButton.addEventListener("click", () => {
         body: JSON.stringify(tripData),
       });
 
-      const result = await response.json(); // <- will work now
-      console.log("Backend response:", result);
+      const result = await response.json();
+
+      const from = document.getElementById("from-date");
+      const to = document.getElementById("to-date");
+
+      const des = document.getElementById("Trip");
+
+      const Fligths = document.getElementById("Fligths");
+
+      const Hotel = document.getElementById("Hotel");
+
+      const Wether = document.getElementById("Wether");
+
+      from.textContent = fromDateValue;
+      to.textContent = toDateValue;
+      des.textContent = fromValue + "->" + toDateValue;
+      Fligths.textContent = result.data.flights;
+      Hotel.textContent = result.data.hotel;
+      Wether.textContent = result.data.weather;
 
       window.location.href = "result.html";
+      console.log(result.data);
     } catch (err) {
       console.error("Error sending trip data:", err);
     }
