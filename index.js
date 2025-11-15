@@ -5,13 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const btn = document.querySelector(".btn-2");
-  btn.addEventListener("click", () => {
-    window.location.href = "result.html";
-  });
-});
-
 let count = 1;
 
 const value = document.getElementById("value");
@@ -30,8 +23,6 @@ minus.addEventListener("click", () => {
   }
 });
 
-const numberoftravelers = count;
-
 const flyingFrom = document.querySelector('textarea[name="flying-from"]');
 const flyingTo = document.querySelector('textarea[name="Flying-to"]');
 const budget = document.querySelector('textarea[name="Budget"]');
@@ -47,4 +38,32 @@ planButton.addEventListener("click", () => {
   const budgetValue = budget.value;
   const fromDateValue = fromDate.value;
   const toDateValue = toDate.value;
+
+  async function sendTripData() {
+    const tripData = {
+      numberOfTravelers: count,
+      from: fromValue,
+      to: toValue,
+      budget: budgetValue,
+      fromDate: fromDateValue,
+      toDate: toDateValue,
+    };
+
+    try {
+      const response = await fetch("http://localhost:3000/trip", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(tripData),
+      });
+
+      const result = await response.json(); // <- will work now
+      console.log("Backend response:", result);
+
+      window.location.href = "result.html";
+    } catch (err) {
+      console.error("Error sending trip data:", err);
+    }
+  }
+
+  sendTripData();
 });

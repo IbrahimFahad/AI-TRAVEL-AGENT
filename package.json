@@ -1,6 +1,9 @@
 {
-  "name": "Scrim-s05s2c5",
+  "name": "scrim-s05s2c5",
   "description": "https://scrimba.com/the-ai-engineer-path-c02v/~030",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "vite",
     "dev": "vite",
@@ -8,8 +11,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "openai": "4.19.1",
-    "vite": "latest"
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "openai": "^4.19.1",
+    "vite": "^7.2.2"
   },
-  "devDependencies": {}
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IbrahimFahad/AI-TRAVEL-AGENT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IbrahimFahad/AI-TRAVEL-AGENT/issues"
+  },
+  "homepage": "https://github.com/IbrahimFahad/AI-TRAVEL-AGENT#readme"
 }

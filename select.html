@@ -38,7 +38,14 @@
         <button class="btn-2"> Plan my Trip! </button>
     </div>
 
-    <script type="module" src="index.js"></script>
+    <script type="module" src="index.js">
+        document.addEventListener("DOMContentLoaded", () => {
+            const btn = document.querySelector(".btn-2");
+            btn.addEventListener("click", () => {
+                window.location.href = "result.html";
+            });
+        });
+    </script>
 </body>
 
 </html>
