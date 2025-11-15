@@ -12,12 +12,151 @@ body {
 
 }
 
-.btn {
+.btn,
+.btn-2 {
     display: block;
     width: 280px;
     height: 50px;
     margin: 20px auto;
     padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4BDCB0;
+    color: rgb(0, 0, 0);
+    border: 4px solid #000000;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+
+.travellers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+}
+
+.counter-box {
+    width: 320px;
+    height: 60px;
+    border: 4px solid black;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    box-sizing: border-box;
+    background: white;
+    margin: 20px auto;
+    resize: none;
+
+}
+
+.circle-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid black;
+    background: black;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#value {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.box {
+    position: relative;
+    top: 10px;
+    left: 2px;
+}
+
+.flying-from {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+
+
+}
+
+.title {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: block;
+}
+
+.title-2 {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: block;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #c2f0f9;
+    gap: 5px;
+
+    margin: 15px;
+
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 20px;
+
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    min-width: 150px;
+    text-align: center;
+}
+
+
+
+.button .arrow-left {
+    margin-left: 8px;
+}
+
+.button .arrow-right {
+    margin-right: 8px;
+}
+
+.route-button {
+    font-size: 20px;
+    padding: 15px 30px;
+    min-width: 250px;
+}
+
+.box-1 {
+    text-align: center;
+}
+
+.btn-3 {
+    display: block;
+    width: 190px;
+    height: 50px;
     font-size: 18px;
     background-color: #4BDCB0;
     color: rgb(0, 0, 0);
