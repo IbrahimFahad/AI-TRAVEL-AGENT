@@ -30,7 +30,7 @@ export async function gethotelRecommendations({
     {
       role: "system",
       content:
-        "You are a helpful travel assistant. Invent hotels and prices — they do NOT need to be real. Just sound realistic.",
+        "You are a helpful travel assistant. Invent hotels and prices — they do NOT need to be real. Just sound realistic and only give one best hotel Recommendation , and give a nice tone respoend .",
     },
   ];
 
@@ -59,7 +59,7 @@ export async function getgflightOptions({
       {
         role: "system",
         content:
-          "You are a travel assistant. Create made‑up but realistic flight details (airlines, flight numbers, times, prices). They do NOT need to match real-world data.",
+          "You are a travel assistant. Create made‑up but realistic flight details (airlines, flight numbers, times, prices). They do NOT need to match real-world data. and only give one best hotel Recommendation , and give a nice tone respoend",
       },
     ];
 

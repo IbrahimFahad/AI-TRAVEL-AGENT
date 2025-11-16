@@ -41,7 +41,16 @@
 
     </div>
 
-    <script type="module" src="index.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("from-date").textContent = localStorage.getItem("fromDate");
+            document.getElementById("to-date").textContent = localStorage.getItem("toDate");
+            document.getElementById("Trip").textContent = localStorage.getItem("trip");
+            document.getElementById("Wether").textContent = localStorage.getItem("weather");
+            document.getElementById("Fligths").textContent = localStorage.getItem("flights");
+            document.getElementById("Hotel").textContent = localStorage.getItem("hotel");
+        });
+    </script>
 </body>
 
 </html>
